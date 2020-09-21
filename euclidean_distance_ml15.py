@@ -42,5 +42,5 @@ result = k_nearest_neighbors(dataset, new_features, k=3)
 print(result)
 
 [[plt.scatter(ii[0], ii[1], s=100, color=i) for ii in dataset[i]] for i in dataset]
-plt.scatter(new_features[0], new_features[1], color= result)
+plt.scatter(new_features[0], new_features[1], color=result)
 plt.show()
