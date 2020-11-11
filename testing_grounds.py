@@ -1,9 +1,10 @@
 import requests
+import pandas as pd
 
 # csv_url = 'https://media.githubusercontent.com/media/molecularsets/moses/master/data/dataset_v1.csv'
 csv_url = 'http://zinc15.docking.org/substances/ZINC000000000007/'
 req = requests.get(csv_url)
-print(req.text)
+#print(req.text)
 
 # csv_file = open('downloaded.csv', 'wb')
 #
@@ -17,3 +18,4 @@ data = {
 
 response = requests.post('http://zinc.docking.org/substances/', data=data)
 #print(response.text)
+
